@@ -5,5 +5,5 @@ from .models import CustomUser
 
 
 class CustomUserView(generics.ListAPIView):
-    queryset = CustomUser
+    queryset = CustomUser.objects.all()
     serializer_class = CustomUserSerializer
